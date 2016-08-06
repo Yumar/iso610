@@ -1,14 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.net.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.unapec.cine.controller.FXMLController">
+<AnchorPane id="AnchorPane" prefHeight="513.0" prefWidth="802.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.unapec.cine.controller.FXMLController">
     <stylesheets>
-        <URL value="@/styles/Styles.css"/>
+        <URL value="@/styles/Styles.css" />
     </stylesheets>
+    <children>
+        <TabPane prefHeight="586.0" prefWidth="803.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab text="Boletas">
+                    <content>
+                        <fx:include fx:id="boletaTabPage" source="Boleteria.fxml" />
+                    </content>
+                </Tab>
+                <Tab text="Tandas">
+                    <content>
+                        <fx:include fx:id="tandaTabPage" source="Tanda.fxml" />
+                    </content>
+                </Tab>
+                <Tab text="Peliculas">
+                    <content>
+                        <fx:include fx:id="peliculaTabPage" source="Pelicula.fxml" />
+                    </content>
+                </Tab>
+                <Tab text="Elenco">
+                    <content>
+                        <fx:include fx:id="artistaTabPage" source="Artista.fxml" />
+                    </content>
+                </Tab>
+                <Tab text="Cines">
+                    <content>
+                        <fx:include fx:id="cineTabPage" source="cine.fxml" />
+                    </content>
+                </Tab>
+                <Tab text="Salas">
+                    <content>
+                        <fx:include fx:id="salaTabPage" source="Sala.fxml" />
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </children>
 </AnchorPane>

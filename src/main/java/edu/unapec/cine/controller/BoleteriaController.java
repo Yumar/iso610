@@ -5,32 +5,36 @@
  */
 package edu.unapec.cine.controller;
 
+import edu.unapec.cine.model.Cine;
+import edu.unapec.cine.model.Tanda;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.scene.text.Text;
 
 /**
  * FXML Controller class
  *
- * @author ibatista as 
+ * @author yumarx
  */
-public class ArtistaController implements Initializable {
+public class BoleteriaController implements Initializable {
 
     @FXML
-    private TextField artistaTxt;
+    private ComboBox<Tanda> tandaCbx;
     @FXML
-    private DatePicker fechanacDate;
+    private TextField cantidadTxt;
     @FXML
-    private TableView<?> artistaTable;
+    private ComboBox<Cine> cineCbx;
     @FXML
-    private TableColumn<?, ?> artistaNombreColumn;
+    private DatePicker fechaDate;
     @FXML
-    private TableColumn<?, ?> artistaFechaNacColumn;
+    private Text precioBoletoTxt;
+    @FXML
+    private Text totalTxt;
 
     /**
      * Initializes the controller class.

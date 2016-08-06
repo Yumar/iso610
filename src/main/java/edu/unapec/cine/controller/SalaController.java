@@ -9,7 +9,8 @@ import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.DatePicker;
+import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
@@ -17,20 +18,26 @@ import javafx.scene.control.TextField;
 /**
  * FXML Controller class
  *
- * @author ibatista as 
+ * @author yumarx
  */
-public class ArtistaController implements Initializable {
+public class SalaController implements Initializable {
 
     @FXML
-    private TextField artistaTxt;
+    private Button btnGuardar;
     @FXML
-    private DatePicker fechanacDate;
+    private Button btnEliminar;
     @FXML
-    private TableView<?> artistaTable;
+    private TextField nombreSalaTxt;
     @FXML
-    private TableColumn<?, ?> artistaNombreColumn;
+    private Button btnLimpiar;
     @FXML
-    private TableColumn<?, ?> artistaFechaNacColumn;
+    private TableView<?> salaTable;
+    @FXML
+    private TableColumn<?, ?> salaCineColumn;
+    @FXML
+    private TableColumn<?, ?> salaNombreColumn;
+    @FXML
+    private ComboBox<?> cineCbx;
 
     /**
      * Initializes the controller class.
