@@ -10,7 +10,7 @@
         <URL value="@/styles/Styles.css" />
     </stylesheets>
     <children>
-        <TabPane prefHeight="586.0" prefWidth="803.0" tabClosingPolicy="UNAVAILABLE">
+        <TabPane prefHeight="513.0" prefWidth="803.0" tabClosingPolicy="UNAVAILABLE">
             <tabs>
                 <Tab text="Boletas">
                     <content>
@@ -27,7 +27,7 @@
                         <fx:include fx:id="peliculaTabPage" source="Pelicula.fxml" />
                     </content>
                 </Tab>
-                <Tab text="Elenco">
+                <Tab text="Artista">
                     <content>
                         <fx:include fx:id="artistaTabPage" source="Artista.fxml" />
                     </content>

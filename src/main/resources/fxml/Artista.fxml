@@ -9,25 +9,25 @@
 <?import javafx.scene.control.TitledPane?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="387.0" prefWidth="686.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.unapec.cine.controller.ArtistaController">
+<AnchorPane id="AnchorPane" prefHeight="462.0" prefWidth="801.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.unapec.cine.controller.ArtistaController">
    <children>
-      <TitledPane animated="false" collapsible="false" layoutY="-4.0" prefHeight="395.0" prefWidth="686.0" text="Artista">
+      <TitledPane animated="false" collapsible="false" layoutX="4.0" layoutY="-4.0" prefHeight="469.0" prefWidth="795.0" text="Artista">
         <content>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="390.0" prefWidth="684.0">
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="430.0" prefWidth="793.0">
                <children>
-                  <Button layoutX="203.0" layoutY="104.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="76.0" text="Guardar" />
-                  <TextField id="txtnombreartista" fx:id="artistaTxt" layoutX="16.0" layoutY="47.0" />
+                  <Button layoutX="684.0" layoutY="104.0" mnemonicParsing="false" onAction="#save" prefHeight="31.0" prefWidth="76.0" text="Guardar" />
+                  <TextField id="txtnombreartista" fx:id="artistaTxt" layoutX="16.0" layoutY="47.0" prefHeight="31.0" prefWidth="504.0" />
                   <Label layoutX="16.0" layoutY="18.0" text="Nombre Artista" />
-                  <DatePicker fx:id="fechanacDate" layoutX="220.0" layoutY="46.0" />
-                  <Label layoutX="220.0" layoutY="19.0" text="Fecha de Nacimiento" />
-                  <TableView fx:id="artistaTable" layoutX="-7.0" layoutY="162.0" prefHeight="200.0" prefWidth="694.0">
+                  <DatePicker fx:id="fechanacDate" layoutX="542.0" layoutY="45.0" />
+                  <Label layoutX="542.0" layoutY="18.0" text="Fecha de Nacimiento" />
+                  <TableView fx:id="artistaTable" layoutX="10.0" layoutY="162.0" prefHeight="265.0" prefWidth="773.0">
                     <columns>
-                      <TableColumn fx:id="artistaNombreColumn" prefWidth="445.0" text="Nombre" />
-                      <TableColumn fx:id="artistaFechaNacColumn" prefWidth="248.0" text="Fecha de Nacimiento" />
+                      <TableColumn fx:id="artistaNombreColumn" prefWidth="521.0" text="Nombre" />
+                      <TableColumn fx:id="artistaFechaNacColumn" prefWidth="286.0" text="Fecha de Nacimiento" />
                     </columns>
                   </TableView>
-                  <Button layoutX="110.0" layoutY="104.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="76.0" text="Eliminar" />
-                  <Button layoutX="16.0" layoutY="104.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="76.0" text="Limpiar" />
+                  <Button layoutX="591.0" layoutY="104.0" mnemonicParsing="false" onAction="#delete" prefHeight="31.0" prefWidth="76.0" text="Eliminar" />
+                  <Button layoutX="497.0" layoutY="104.0" mnemonicParsing="false" onAction="#clearSelection" prefHeight="31.0" prefWidth="76.0" text="Limpiar" />
                </children>
             </AnchorPane>
         </content>
