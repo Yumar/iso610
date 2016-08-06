@@ -96,7 +96,7 @@ public class Cine implements Serializable {
 
     @Override
     public String toString() {
-        return "edu.unapec.cine.model.Cine[ idcine=" + idcine + " ]";
+        return nombre;
     }
     
 }
