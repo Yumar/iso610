@@ -119,7 +119,7 @@ public class Rol implements Serializable {
 
     @Override
     public String toString() {
-        return "edu.unapec.cine.model.Rol[ idrol=" + idrol + " ]";
+        return this.rolcol+" : "+this.idartista.getNombre();
     }
     
 }

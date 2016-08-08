@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="180.0" prefWidth="409.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.60" fx:controller="edu.unapec.cine.controller.RolController">
+   <children>
+      <TitledPane animated="false" collapsible="false" prefHeight="185.0" prefWidth="420.0" text="Añadir Elenco">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="137.0" prefWidth="418.0">
+               <children>
+                  <Button layoutX="327.0" layoutY="101.0" mnemonicParsing="false" onAction="#ok" text="Aceptar" />
+                  <Button layoutX="239.0" layoutY="101.0" mnemonicParsing="false" onAction="#cancel" text="Cancelar" />
+                  <ComboBox fx:id="artistaSelect" layoutX="14.0" layoutY="42.0" prefHeight="31.0" prefWidth="184.0" />
+                  <Label layoutX="14.0" layoutY="14.0" text="Artista" />
+                  <Label layoutX="216.0" layoutY="14.0" text="Papel" />
+                  <TextField fx:id="rolTxt" layoutX="216.0" layoutY="42.0" />
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+   </children>
+</AnchorPane>

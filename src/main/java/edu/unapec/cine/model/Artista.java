@@ -111,7 +111,7 @@ public class Artista implements Serializable {
 
     @Override
     public String toString() {
-        return "edu.unapec.cine.model.Artista[ idartista=" + idartista + " ]";
+        return this.nombre;
     }
     
 }
